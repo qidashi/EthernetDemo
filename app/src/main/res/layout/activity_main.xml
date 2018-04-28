@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开以太网" />
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭以太网" />
+
+    <Button
+        android:id="@+id/dhcp_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="动态IP" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:paddingStart="10dp"
+        android:rowCount="10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ip地址：" />
+
+        <EditText
+            android:text="192.168.1.222"
+            android:id="@+id/et_ip"
+            android:layout_width="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="子网掩码：" />
+
+        <EditText
+            android:text="255.255.255.0"
+            android:id="@+id/et_zwym"
+            android:layout_width="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网关：" />
+
+        <EditText
+            android:text="192.168.1.1"
+            android:id="@+id/et_ip_wg"
+            android:layout_width="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dns1：" />
+
+        <EditText
+            android:text="192.168.1.1"
+            android:id="@+id/et_dns1"
+            android:layout_width="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dns2：" />
+
+        <EditText
+            android:text="192.168.1.1"
+            android:id="@+id/et_dns2"
+            android:layout_width="match_parent" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/static_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="静态IP" />
+<TextView
+    android:id="@+id/tv_ip_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+</LinearLayout>
